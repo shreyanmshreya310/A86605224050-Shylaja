@@ -77,12 +77,12 @@ def add_task(tasks):
         # Validate date
         datetime.strptime(due_date, "%Y-%m-%d")
     except ValueError:
-        print("Invalid date format.")
+        print("Invalid date format please try again.")
         return
     task = Task(title, description, due_date)
     tasks.append(task)
     save_tasks(tasks)
-    print("Task added successfully!")
+    print("Task added successfully!Thank you")
 
 # Mark a task as completed
 def mark_task_complete(tasks):
